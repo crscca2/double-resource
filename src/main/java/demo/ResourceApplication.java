@@ -65,7 +65,7 @@ public class ResourceApplication extends WebSecurityConfigurerAdapter {
 				.anyRequest().authenticated();
 	}
 
-	@Bean
+	/*@Bean
 	public WebRequestTraceFilter webRequestLoggingFilter(ErrorAttributes errorAttributes,
 			TraceRepository traceRepository, TraceProperties traceProperties) {
 		WebRequestTraceFilter filter = new WebRequestTraceFilter(traceRepository,
@@ -75,11 +75,11 @@ public class ResourceApplication extends WebSecurityConfigurerAdapter {
 		}
 		filter.setOrder(SecurityProperties.DEFAULT_FILTER_ORDER - 1);
 		return filter;
-	}
+	}*/
 }
 
 class Message {
-	private String id = UUID.randomUUID().toString();
+	private String id = "1";//UUID.randomUUID().toString();
 	private String content;
 
 	Message() {
